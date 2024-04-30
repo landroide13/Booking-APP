@@ -1,9 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Place Detail</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/places/discover"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>{{ place.title }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
+  <ion-button color="primary" (click)="onBookPlace()"> 
+    Book
+  </ion-button>
  
 </ion-content>
